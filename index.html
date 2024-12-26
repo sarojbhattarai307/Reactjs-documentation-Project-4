@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React.js Documentation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>React.js Documentation</h1>
+            <p>A Comprehensive Guide to Modern Web Development with React</p>
+        </header>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#setup">Setup</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#hooks">Hooks</a></li>
+                <li><a href="#state-management">State Management</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <aside class="sidebar">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#introduction">What is React?</a></li>
+                    <li><a href="#jsx">Understanding JSX</a></li>
+                    <li><a href="#components">Components Basics</a></li>
+                    <li><a href="#functional-components">Functional Components</a></li>
+                    <li><a href="#class-components">Class Components</a></li>
+                    <li><a href="#props">Props</a></li>
+                    <li><a href="#state">State</a></li>
+                    <li><a href="#hooks">React Hooks</a></li>
+                    <li><a href="#usestate">useState Hook</a></li>
+                    <li><a href="#useeffect">useEffect Hook</a></li>
+                    <li><a href="#routing">React Router</a></li>
+                    <li><a href="#state-management">State Management</a></li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <section id="introduction" class="section">
+                    <h2>Introduction to React</h2>
+                    <p>React is a popular JavaScript library for building user interfaces, developed by Facebook. It allows developers to create reusable UI components and manage the application state efficiently.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Component-Based Architecture</li>
+                        <li>Virtual DOM for Performance</li>
+                        <li>Declarative Syntax</li>
+                        <li>Unidirectional Data Flow</li>
+                    </ul>
+                </section>
+
+                
+
+                <section id="jsx" class="section">
+                    <h2>Understanding JSX</h2>
+                    <p>JSX is a syntax extension for JavaScript that looks similar to XML or HTML. It allows you to write HTML-like code within JavaScript.</p>
+                    
+                    <pre><code>
+const element = <h1>Hello, React!</h1>;
+                    </code></pre>
+                </section>
+
+                <section id="components" class="section">
+                    <h2>Components in React</h2>
+                    <p>Components are the building blocks of React applications. They can be created in two primary ways:</p>
+                    
+                    <h3>Functional Components</h3>
+                    <pre><code>
+function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+}
+                    </code></pre>
+                    
+                    <h3>Class Components</h3>
+                    <pre><code>
+class Welcome extends React.Component {
+    render() {
+        return <h1>Hello, {this.props.name}</h1>;
+    }
+}
+                    </code></pre>
+                </section>
+
+                <section id="hooks" class="section">
+                    <h2>React Hooks</h2>
+                    <p>Hooks are functions that let you use state and other React features in functional components.</p>
+                    
+                    <h3>useState Hook</h3>
+                    <pre><code>
+import React, { useState } from 'react';
+
+function Counter() {
+    const [count, setCount] = useState(0);
+    
+    return ()
+        <div>
+            <p>You clicked {count} times</p>
+            <button "onClick"={(a) => setCount(count + 1)}>
+                Click me
+            </button>
+        </div>
+    
+                    </code></pre>
+                    
+                    <h3>useEffect Hook</h3>
+                    <pre><code>
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+    const [count, setCount] = useState(0);
+    
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+    });
+    
+    return <div>Check the document title</div>;
+}
+                    </code></pre>
+                </section>
+
+                <section id="state-management" class="section">
+                    <h2>State Management</h2>
+                    <p>As applications grow, managing state becomes crucial. React provides several approaches:</p>
+                    
+                    <h3>Local State</h3>
+                    <p>Using <code>useState</code> for component-level state.</p>
+                    
+                    <h3>Context API</h3>
+                    <p>For sharing state across multiple components without prop drilling.</p>
+                    
+                    <h3>Redux</h3>
+                    <p>A predictable state container for larger applications.</p>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 React.js Documentation Project</p>
+        </footer> 
+    </div>
+</body>
+</html>
